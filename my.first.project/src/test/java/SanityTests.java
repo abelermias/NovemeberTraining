@@ -8,7 +8,7 @@ public class SanityTests {
   
   @Test
   public void canUseVar() {
-	  String myString = "Abel";
+	  String myString = "AbelErmias";
 	  var myVarString = "Abel";
   }
 }
