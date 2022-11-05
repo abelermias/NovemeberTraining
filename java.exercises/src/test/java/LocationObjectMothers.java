@@ -1,5 +1,3 @@
-
-
 public class LocationObjectMothers {
 
 	public static LocationObjectMother NewOrleans() {
@@ -27,7 +25,7 @@ public class LocationObjectMothers {
 		
 	}
 	
-public static LocationObjectMother Asheville() {
+	public static LocationObjectMother Asheville() {
 		
 		return new LocationBuilder()
 				.withState(States.NorthCarolina)
@@ -35,7 +33,4 @@ public static LocationObjectMother Asheville() {
 				.build();
 		
 	}
-
-	// NewYorkCity, NY
-	// Atlanta, GA
 }

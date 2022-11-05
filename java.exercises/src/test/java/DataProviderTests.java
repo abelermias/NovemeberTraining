@@ -5,13 +5,10 @@ public class DataProviderTests {
   @Test
   public void canGetStateName() {
 	  
-	  //arrange
 	  var expectedState = "Texas";
 	  
-	  //act
 	  var actualState = States.Texas.Name;
 	  
-	  //assert
 	  Assert.assertEquals(actualState, expectedState, "State name should be returned.");
   }
 
