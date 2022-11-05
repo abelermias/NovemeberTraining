@@ -5,7 +5,7 @@
     <classes>
       <class name="DataProviderTests">
         <methods>
-          <include name="canGetStateNameFromObjectMother"/>
+          <include name="canGetCounty"/>
         </methods>
       </class> <!-- DataProviderTests -->
     </classes>
