@@ -1,5 +1,4 @@
-
-public class City {
+public class City extends GeneralData {
 	
 	public String name;
 	public String county;

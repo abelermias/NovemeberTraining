@@ -12,7 +12,6 @@ public class DataProviderTests {
 	  Assert.assertEquals(actualState, expectedState, "State name should be returned.");
   }
 
-
   @Test
   public void canGetStateAbbreviation() {
 	
@@ -22,6 +21,7 @@ public class DataProviderTests {
 	
 	  Assert.assertEquals(actualAbbreviation, expectedAbbreviation, "Abbreviation should be returned.");
   }
+  
   @Test
   public void canGetStateNameFromObjectMother() {
 	  
@@ -85,7 +85,6 @@ public class DataProviderTests {
   private String getCounty(LocationObjectMother mother) {
 	  return mother.City.county;
   }
-
 }
 
 
