@@ -1,4 +1,3 @@
-
 public class Cities {
 	public static City Houston = new City("Houston","Montgomery");
 	public static City NewOrleans = new City("New Orleans","Orleans");
