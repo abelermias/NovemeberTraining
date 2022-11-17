@@ -1,0 +1,117 @@
+--Ampeg Manual Test Project--
+https://ampeg.com/
+
+1. You decide what should be priority (to test) in the webapp.
+2. 6 manual test cases total.
+3. Ensure to include what 'should' be included in a manual test (title, summary, etc).
+4. Ensure that 5 tests consist of navigating to more than one page.
+5. Ensure that 2 tests consist of navigating to 3 or more pages.
+
+Title
+Summary
+Pre-Conditions
+Steps
+Expected Result
+
+---------------------------------------------------------------------------------------------
+
+Title 	: 001_SCR-DI_buy_test
+
+Summary	: This test is to purchase the SCR-DI pedal, without using the search button. This fails and tells the user that it is unable to process the request
+
+Pre-Conditions	: Start at home page
+
+Steps : 
+1. Click on "products" located at the top within the navbar.
+2. Click on "pedals" located at the fourth option on the left side.
+3. Click on "buy", which is a blue button at the top right.
+4. Click on "buy" under the SCR-DI pedal
+
+Expected Result : The expectation was to be taken to the checkout page, with the SCR-DI pedal in the cart ready to purchase
+
+---------------------------------------------------------------------------------------------
+
+Title	: 002-Plug_in_Software_buy_test
+
+Summary : This test is to purchase the plug in software, without using the search button.
+
+Pre-Conditions	: Start at home page
+
+Steps :
+1. Click on "shop" located in the navbar.
+2. Hover over "software" located at the navbar, and select "Plug-ins".
+3. Select "ADD TO CART" then 
+4. click on the shopping cart icon in the navbar and click "proceed to checkout"
+
+Expected Result : The expectation is that the user landed on the checkout page, with the only step remaining is to signup and purchase the item
+
+---------------------------------------------------------------------------------------------
+
+Title	: 003-SVT_4PRO_buy_test
+
+Summary : This is a test to check if buying the SVT-4PRO equipment that Tony Levin used.
+
+Pre-Conditions	: Start at home page
+
+Steps	:
+1. Click "artists" located in the navbar.
+2. Scroll down and choose the artist "Tony Levin"
+3. On his page select the "SVT-4PRO" equipment
+4. On the SVT-4PRO page select "Find the dealer"
+5. Select "Buy Now" from Guitar Center
+
+Expected Result : This should take the user to the page where buying the SVT-4PRO from guitar center website
+
+---------------------------------------------------------------------------------------------
+
+Title : 004-PN_410HLF_Bass_Enclosure_buy_test
+
+Summary	: This is a test to see if the user can buy the PN-410HLF Bass Enclosure from the bananas at large website.
+
+Pre-Conditions	: Start on homepage
+
+Steps	:
+1. Click on "shop" located in the navbar
+2. Hover over "hardware" located in the navbar and click "bass enclousure"
+3. Click "find a dealer" beside "PN-410HLF Bass Enclosure"
+4. Click on "buy now" under "bananas at large"
+
+Expected Result : The user should have landed at the bananas at large website with the ability	 to checkout the PN-410HLF Bass Enclosure
+
+---------------------------------------------------------------------------------------------
+
+Title	: 005-RB_110_Japanese_Manual
+
+Summary	: This is a test to get to the Japanese Manual for the RB-110. This is done by going through the assumption that the user looks at rocket bass, then wants to find out more about the RB-110.
+
+Pre-Conditions	: Start at home page
+
+Steps	:
+1. Click on "rocket bass" which is located in the middle of the page
+2. Click on "RB-110" which is located under the navbar
+3. Click on "Manuals" located in the middle of the page
+4. Click on "Rocket Bass 110"
+5. Click on the pdf icon under Japanese
+
+Expected Result : The user should be taken to the Japanese manual for the RB-110.
+
+---------------------------------------------------------------------------------------------
+
+
+Title : 006-Service_Center_For_Bangladesh
+
+Summary	: This is a test to get the info for the service center in Bangladesh. The goal is to end up at a local site.
+
+Pre-Conditions	: Start at the home page
+
+Steps	:
+1. Scroll to the bottom and select the "service centers" option under support.
+2. Click on the "Don't see your Country..." text at the top of the page.
+3. Click on "Bangladesh" and Click on the website "http://sg.yamaha.com"
+
+Expected Result : The user should get sent to the Singapore Yamaha page.
+
+
+
+
+
