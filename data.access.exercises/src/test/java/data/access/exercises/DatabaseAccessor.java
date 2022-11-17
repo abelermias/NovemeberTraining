@@ -1,9 +1,13 @@
 package data.access.exercises;
 
+import java.util.HashMap;
+
 public interface DatabaseAccessor {
-	String[] ExecuteSingleColumn(String sql);
+	String[] executeSingleColumn(String sql);
 	
-	String ExecuteSingleCell(String sql);
+	String executeSingleCell(String sql);
 	
-	DataRow[] Execute(String sql);
+	DataRow[] execute(String sql);
+	
+	DataRow[] executeStoredProcedure(String storeProc, HashMap<String,String> inParameters, HashMap<String,String> outParameters);
 }
