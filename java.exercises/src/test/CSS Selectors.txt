@@ -1,0 +1,11 @@
+CSS SELECTORS PROJECT
+https://demoqa.com	
+
+1. $("#userName")
+2. $x("//button[@class='btn btn-primary']")
+3. $x("//span") 
+4. $("li:contains(Main Item)")
+5. $("option[value=4]")
+6. document.querySelector("#sliderValue").value
+7. document.querySelector("#userName").value
+
