@@ -3,15 +3,15 @@ import org.openqa.selenium.WebDriver;
 
 public class HardwarePage extends PageObject{
 	
-	public HardwarePage(WebDriver driver) {
-		super(driver);
+	public HardwarePage(WebDriver driver, String baseUrl) {
+		super(driver, baseUrl);
 	}
 
 	public HardwarePage clickPN410HLFDealerLink() {
-		var BELink = this.driver.findElement(By.xpath("//button[@data-product='99-030-2801']"));
-		BELink.click();
+		var beLink = this.driver.findElement(By.xpath("//button[@data-product='99-030-2801']"));
+		beLink.click();
 		
-		return new HardwarePage(this.driver);
+		return new HardwarePage(this.driver, baseUrl);
 	}
 
 	public String clickBuyNowWithBananaPN410HLF() {

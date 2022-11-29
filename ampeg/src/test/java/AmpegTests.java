@@ -1,13 +1,16 @@
-import java.util.concurrent.TimeUnit;
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class AmpegTests {
 	
+	protected final String BASEURL = "https://ampeg.com/";
+	protected DriverManager driverManager; 
 	protected WebDriver driver;
+	protected String driverType;
 	
 	@BeforeMethod
 	public void beforeMethod() {
@@ -16,24 +19,35 @@ public abstract class AmpegTests {
 	
 	@AfterMethod
 	public void CleanUp() {
-		this.quitDriver();
-	}
-	
-	private void quitDriver() {
-		if(this.driver == null) {
-			return;
-		}
-		this.driver.quit();
+		driverManager.quitDriver();
 	}
 	
 	private void launchDriver() {
-		var driverPath = "/Users/abel/git/NovemeberTraining/ampeg/lib/chromedriver";
-		var url = "https://www.ampeg.com/";
-		System.setProperty("webdriver.chrome.driver", driverPath);
+		driverType = this.getDriverType();
+		driverManager = DriverManagerFactory.getManager(driverType);
+		driverManager.createDriver();
+		driver = driverManager.getDriver();
+		this.driver.navigate().to(BASEURL);
+	}
+	
+	private String getDriverType() {
+		Scanner driverScanner = null;
+		File file = new File("driverType.txt"); 
 
-		this.driver = new ChromeDriver();
-		this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		this.driver.manage().window().maximize();
-		this.driver.navigate().to(url);
+		try {
+			driverScanner = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		driverScanner.useDelimiter("\"");
+		
+		String driverType = "";
+		while(driverScanner.hasNext()) {
+			driverType = driverScanner.next();
+		}
+		
+		driverScanner.close();
+		return driverType;
 	}
 }

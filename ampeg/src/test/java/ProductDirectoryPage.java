@@ -27,6 +27,4 @@ public class ProductDirectoryPage extends PageObject {
 		
 		return new ProductCategoryPage(this.driver);
 	}
-	
-	
 }
