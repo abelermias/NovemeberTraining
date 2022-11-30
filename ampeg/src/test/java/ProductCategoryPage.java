@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 public class ProductCategoryPage extends PageObject {
 	
-	public ProductCategoryPage(WebDriver driver) {
-		super(driver);
+	public ProductCategoryPage(WebDriver driver, String baseUrl) {
+		super(driver, baseUrl);
 	}
 
 	public String clickBuyNowSCRDI() {

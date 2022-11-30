@@ -5,8 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ShopPage extends PageObject{
 	
-	public ShopPage(WebDriver driver) {
-		super(driver);
+	public ShopPage(WebDriver driver, String baseUrl) {
+		super(driver, baseUrl);
 	}
 
 	public HardwarePage clickBEHardwareLink() {
@@ -17,7 +17,7 @@ public class ShopPage extends PageObject{
 		var dpHardwareLink = this.driver.findElement(By.xpath("//a[@id='ui-id-8']"));
 		dpHardwareLink.click();
 		
-		return new HardwarePage(this.driver);
+		return new HardwarePage(this.driver, baseUrl);
 	}
 	
 	public SoftwarePage clickPluginSoftwareLink() {
@@ -28,6 +28,6 @@ public class ShopPage extends PageObject{
 		var pluginLink = this.driver.findElement(By.xpath("//a[@id='ui-id-6']"));
 		pluginLink.click();
 		
-		return new SoftwarePage(this.driver);
+		return new SoftwarePage(this.driver, baseUrl);
 	}
 }

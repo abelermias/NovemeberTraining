@@ -2,8 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class SoftwarePage extends PageObject{
-	public SoftwarePage(WebDriver driver) {
-		super(driver);
+	public SoftwarePage(WebDriver driver, String baseUrl) {
+		super(driver, baseUrl);
 	}
 
 	public String clickAddToCart() {

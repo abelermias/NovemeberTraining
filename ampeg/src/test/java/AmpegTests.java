@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.DriverManager;
 import java.util.Scanner;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;

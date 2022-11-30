@@ -8,7 +8,7 @@ public class ProductPurchaseTests extends AmpegTests {
 	public void canPurchaseBassEnclosure() {
 		var expectedResult = "FIND A DEALER";
 
-		var actualResult = new HomePage(this.driver)
+		var actualResult = new HomePage(this.driver, BASEURL)
 				.clickShopLink()
 				.clickBEHardwareLink()
 				.clickPN410HLFDealerLink()
@@ -21,7 +21,7 @@ public class ProductPurchaseTests extends AmpegTests {
 	public void canBuyPluginSoftware() {
 		var expectedResult = "1";
 
-		var actualResult = new HomePage(this.driver)
+		var actualResult = new HomePage(this.driver, BASEURL)
 				.clickShopLink()
 				.clickPluginSoftwareLink()
 				.clickAddToCart();
@@ -33,7 +33,7 @@ public class ProductPurchaseTests extends AmpegTests {
 	public void canBuySCRDIPedal() {
 		var expectedResult = "Unable to process";
 
-		var actualResult = new HomePage(this.driver)
+		var actualResult = new HomePage(this.driver, BASEURL)
 				.clickProductsLink()
 				.clickPedalsLink()
 				.clickBuy()
