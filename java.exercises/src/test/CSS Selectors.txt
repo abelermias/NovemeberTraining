@@ -1,0 +1,24 @@
+CSS SELECTORS PROJECT
+https://demoqa.com	
+
+Page:/text-box. Write a selector that will return the ‘Full Name’ textboxusing the ID attribute. Hint: This element has the ‘input’ tag.
+	$("#userName")
+	
+Page: /buttons. Write a selector that will return all 3 buttons shown below.
+	$("button[class='btn btn-primary']")
+
+Page:/buttons. Write a selector that will return the span element in the footer.
+	$("footer>span")
+
+*Page:/menu.Write a selector that will return the 3 listitem elementsin the unordered list.
+	$("li:contains(Main Item)")
+	
+*Page: /select-menu. Write a selector that will get the option elementwhere value = 4.
+	$("option[value=4]")
+
+Page: /slider. Write the JavaScript to getthe value for the element with id=sliderValue.
+	document.querySelector("#sliderValue").value
+
+*Page: /text-box. Write the JavaScript to set the value for the element with id=username.
+	document.querySelector("#userName").value
+

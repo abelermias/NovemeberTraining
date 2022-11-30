@@ -1,0 +1,26 @@
+XPATH
+https://demoqa.com
+
+Page: /text-box. Write the xpath that will return the ‘Full Name’textbox using the ID attribute. Hint: This element has the ‘input’tag.
+	$x("//input[@id='userName']")
+
+Page: /buttons. Write the xpath that will return all elements on the page with the ‘button’tag.
+	$x("//button[@class='btn btn-primary']")
+	
+Page: /webtables. Write the xpath that will return the div with text of ‘Vega’. Ensure to narrow the scope of your xpath to the 
+ReactTableandensure that your xpath is limited to returningcells only. Cells in this table have the class ‘rt-td’. 
+Hint: You must use “Vega”in your xpath.	
+	$x("//div[@Class='ReactTable -striped -highlight']//div[text()='Vega']")
+	
+Page: /radio-button.Write the xpath that will return the parent element for the radio button with id=’impressiveRadio’.	
+	$x("//div[./input[@id='impressiveRadio']]")
+
+Page: /radio-button. Write the xpath that will return all DIV ancestors for the radio button with id=’impressiveRadio’.
+	$x("//input[@id='impressiveRadio']/ancestor::div")
+	
+*Page: /radio-button: Write the xpath that will return the sibling for the radio button with id=’impressiveRadio’. 
+Do not use the sibling axes. Navigate to the parent element then down to the siblinginstead.	
+
+
+Page: /buttons. Write the xpath that will return all buttons containing the value “Click”.
+	$x("//button[@type='button' and contains(text(), 'Click')]")
