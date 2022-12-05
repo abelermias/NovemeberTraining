@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,8 +24,7 @@ public class HyperLinksPage extends PageObject{
 		return new HyperLink(this.link);
 	}
 	
-	// TODO:: Find a way to get Status Code
 	public String getStatusCode() {
-		
+		return this.driver.findElement(By.xpath("//p[@id='linkResponse']")).getText();
 	}
 }

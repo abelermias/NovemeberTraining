@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HyperLinkTests">
+      <class name="SelectMenuTests">
         <methods>
           <include name="cleanup"/>
-          <include name="canClickHyperLink"/>
           <include name="setup"/>
           <include name="beforeMethod"/>
+          <include name="canSetValue"/>
         </methods>
-      </class> <!-- HyperLinkTests -->
+      </class> <!-- SelectMenuTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

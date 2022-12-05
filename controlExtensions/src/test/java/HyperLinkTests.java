@@ -1,6 +1,8 @@
 import org.testng.annotations.Test;
-
 import Foundations.TestBase;
+
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.BeforeMethod;
 
 public class HyperLinkTests extends TestBase{
@@ -17,10 +19,12 @@ public class HyperLinkTests extends TestBase{
 		
 		var expectedStatus = "201";
 		
-		HyperLinksPage link = HyperLinksPage(this.driver)
-							.navigate()
-							.getLink()
-							.click();
+		HyperLinksPage linkPage = new HyperLinksPage(this.driver).navigate();
+		linkPage.getLink();
+		linkPage.click();
 		
+		var actualStatus = linkPage.getStatusCode();
+		
+		assertEquals(actualStatus, expectedStatus, "Should return status code");
 	}
 }
