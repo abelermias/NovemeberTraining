@@ -10,8 +10,6 @@ public class Bass {
     @CsvBindByName
     private String StringCount;
 
-    public Bass() { super(); }
-
     public Bass(String Make, String Model, String Count) {
         this.Make = Make;
         this.Model = Model;

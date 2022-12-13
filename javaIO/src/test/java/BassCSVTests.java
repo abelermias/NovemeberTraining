@@ -35,12 +35,12 @@ public class BassCSVTests {
 	@Test
 	public void canGetCSVFileIntoHashMapMakesAndModels() {
 		
-		var expected = new HashMap<>(){{ 	put("Warwick","Corvette");
-											put("Warwick","Thumb");
-											put("Warwick","Streamer");
-											put("Fender","Precision");
-											put("Fender","Jazz");
-											put("Yamaha","BB500");
+		var expected = new HashMap<>(){{ 	put("Warwick", "Corvette");
+											put("Warwick", "Thumb");
+											put("Warwick", "Streamer");
+											put("Fender",  "Precision");
+											put("Fender",  "Jazz");
+											put("Yamaha",  "BB500");
         }};
         
         var actual = getHashMap();
@@ -62,9 +62,9 @@ public class BassCSVTests {
 		
 		Bass[] actual = this.bass.toArray(new Bass[0]);
 		
+		// cannot find issue, compares different obj but they are the same
 		for(var i = 0; i < actual.length; i++)
 			assertEquals(actual[i], expected[i], "Same bass expected");
 	
-		//System.out.println("actual: " + actual[0] + " expected: " + expected[0]);
 	}
 }
