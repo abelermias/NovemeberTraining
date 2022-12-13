@@ -46,7 +46,8 @@ public class BassCSVTests {
         var actual = getHashMap();
         assertEquals(actual.keySet(), expected.keySet(), "Same HashMap keys expected");
         
-        //TODO:: check for value(bass) equality 
+        for(String key : actual.keySet())
+        	assertEquals(actual.get(key), expected.get(key), "Same HashMap value expected");
 	}
 	
 	@Test
@@ -61,9 +62,9 @@ public class BassCSVTests {
 		
 		Bass[] actual = this.bass.toArray(new Bass[0]);
 		
-		for(int i = 0; i < actual.length; i++) {
-			//assertEquals(actual[i], expected[i], "Same bass expected");
-			System.out.println("actual: " + actual[i] + " expected: " + expected[i]);
-		}
+		for(var i = 0; i < actual.length; i++)
+			assertEquals(actual[i], expected[i], "Same bass expected");
+	
+		//System.out.println("actual: " + actual[0] + " expected: " + expected[0]);
 	}
 }
