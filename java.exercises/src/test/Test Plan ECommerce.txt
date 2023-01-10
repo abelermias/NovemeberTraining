@@ -1,0 +1,144 @@
+Purpose
+
+This Test Plan is used to communicate with the team the test approach based on the ecommerce bid. It includes the reasoning, objectives, and types of tests needed. The team should be able to identify and implement the Test Plan.
+
+Introduction
+
+A website is necessary for simplifying the buyer and selling process of apparels. The customers would be able to look for the 		items they want and make orders. This was created to enhance the client's business and change it into an e-commerce website. The customers could buy the client's apparels by making an order and paying online. 
+
+In-Scope
+
+	Buyer
+
+	-	Login
+	-	Registration 
+	-	Search products
+	-	Product listing and search results
+	-	Product details with available variations o Add to cart
+	-	Add to wishlist
+	-	Checkout and Online payment of the orders o Share products on social media
+	-	Place the order
+	-	My account
+	-	Order history
+	-	Order tracking
+
+	Admin
+
+	-	Ability to create/edit/delete products
+	-	Manage product categories and sub-categories o Manage product catalog
+	-	Manage orders
+	-	Manage customers o Manage shipping
+	-	Manage payments
+	-	Manage roles/ permissions o CMS pages management
+	-	Statistics and reports
+
+
+Out of Scope
+
+	-	Ordering customized products
+	-	Real time order tracking
+	-	Cash On Delivery option for buyer
+
+Test Strategy
+
+	Approach and Test Types
+		This project will use and agile development approach with sprints every week. Manual Test will be 	
+		conducted before any automated tests to ensure test quality. Once completed automated tests will be 	
+		the main testing approach for unit tests. Once completed there will be testing to handle performance and load
+
+	Test Risks and Issues
+	-	Lack of training to the employees regarding use of system	
+	-	Auditor approval of our new process & system
+	-	Senior management buy-off on the approach
+	-	Funding for this initiative
+	-	Developer resources
+
+Test Environment and Schedule
+
+	Test Planning
+	-	Test requirements and scope
+	-	Test teams roles
+	-	Create functional tests
+	-	Set up testing environment
+
+	Testing Phase
+	-	Manual Testing
+	-	Automate Testing
+
+	Test Analysis
+	-	Test results
+	-	Test status report
+
+	Testing Tools
+	– Test Creation:     Microsoft Excel
+	– Test Execution:    Manual, Selenium
+	– Test Management:   GitHub
+	
+	Software
+	- Should support all web browsers: Chrome, Edge, Firefox
+	- Automated tests run on Eclipse IDE
+	
+	Hardware
+	- Computers for QA testing
+
+Test Objectives and Estimation
+
+	Functional requirements primary priority
+
+		-	FR-001  | Login
+		-	FR-002  | Registration 
+		-	FR-003  | Product search 
+		-	FR-004  | Product listing 
+		-	FR-005  | Product details 
+		-	FR-006  | Wishlist 
+		-	FR-007  | Shopping cart 
+		-	FR-008  | Checkout & payment 
+		-	FR-0010 | My account
+		-	FR-0012 | Order history
+		-	FR-0013 | Contact support
+		-	FR-0014 | Login
+		-	FR-0015 | Dashboard
+		-	FR-0016 | Buyers’ management
+		-	FR-0017 | Orders management
+		-	FR-0018 | Product categories management
+		-	FR-0019 | Products management
+		-	------  | Payments management
+		-	FR-0021 | Statistics & reports
+		-	FR-0022 | System users’ management
+		-	FR-0023 | Roles management
+		-	FR-0024 | CMS management
+		-	FR-0026 | Complaints & feedback
+
+	These would be tests that are completed first based off of business requirements
+
+	Functional requirements secondary	 priority
+
+		-	FR-009  | Social media sharing
+		-	FR-0020 | Ratings & reviews
+		-	FR-0025 | Email management
+
+Test Criteria
+
+	Suspension Criteria
+		- If 50% of current tests fail, testing is suspended until issues are resolved 
+	
+	Exit Criteria
+		- 95% of all tests and 100% of critical test must pass for a feature to be publicly released
+
+Test Deliverables
+
+	Deliverables before testing
+		Test Plan   - Shows what to test and not to test
+		Test Design - Shows required tests and their tracking number
+	
+	Deliverables during Testing
+		Test Scripts
+		Test Data
+		Test Error and Execution Logs
+	
+	Deliverables after Testing
+		Test Results
+		Defect Reports
+		Release Notes
+
+	
